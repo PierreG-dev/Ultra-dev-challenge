@@ -305,6 +305,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </MainContainer>
   );
 };
