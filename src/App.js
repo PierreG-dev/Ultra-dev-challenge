@@ -16,23 +16,23 @@ function App() {
       <div className="App">
         {connected ? (
           <Switch>
-            <Route path={"/"}>
+            <Route exact path={"/"}>
               <Home />
             </Route>
 
-            <Route path={"/Films"}>
+            <Route exact path={"/Films"}>
               <Films />
             </Route>
 
-            <Route path={"/List"}>
+            <Route exact path={"/List"}>
               <List />
             </Route>
 
-            <Route path={"/New"}>
+            <Route exact path={"/New"}>
               <New />
             </Route>
 
-            <Route path={"/Series"}>
+            <Route exact path={"/Series"}>
               <Series />
             </Route>
 
@@ -42,8 +42,8 @@ function App() {
           </Switch>
         ) : (
           <Switch>
-            <Route path={"/"}>
-              <Login />
+            <Route exact path={"/"}>
+              <Login setConnected={setConnected} />
             </Route>
 
             <Route>
