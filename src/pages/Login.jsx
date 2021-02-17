@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Footer from "../components/Layout/Footer";
 import { BsChevronRight } from "react-icons/bs";
 
 const Login = ({ setConnected }) => {
@@ -98,6 +99,7 @@ const Login = ({ setConnected }) => {
           />
         </video>
       </section>
+      <Footer />
     </MainContainer>
   );
 };

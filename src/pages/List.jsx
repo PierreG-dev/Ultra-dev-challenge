@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Layout/Navbar";
 import styled from "styled-components";
+import Footer from "../components/Layout/Footer";
 
 const List = () => {
   return (
@@ -278,6 +279,7 @@ const List = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </MainContainer>
   );
 };
